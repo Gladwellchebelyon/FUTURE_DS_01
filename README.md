@@ -1,6 +1,7 @@
 # FUTURE_DS_01Titanic Survival Analysis 
 
- ![image.png](attachment:image.png)
+![image](https://github.com/user-attachments/assets/5f7401b3-d8b2-4d3b-9455-b0313bf67f4f)
+
  
 
 This project aims to analyze and predict passenger survival on the Titanic using a dataset from Kaggle. Through data cleaning, exploratory data analysis (EDA), and feature engineering, this project identifies key factors influencing survival, setting up a solid foundation for model building and evaluation.
