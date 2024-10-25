@@ -8,7 +8,7 @@ This project aims to analyze and predict passenger survival on the Titanic using
 
 
 
-Table of Contents
+# Table of Contents
 
            Project Overview
            Dataset Information
@@ -22,7 +22,7 @@ Table of Contents
            
            
            
-Project Overview
+# Project Overview
 
 The Titanic dataset provides data on the passengers of the RMS Titanic, including their age, gender, class, and whether they survived the tragedy. This project focuses on understanding which factors played a significant role in survival and builds a predictive model based on these insights.
 
@@ -37,7 +37,7 @@ Use these insights to guide model selection and evaluation.
 
 
 
-Dataset Information
+# Dataset Information
 
 The dataset contains information about Titanic passengers, including:
 
@@ -53,26 +53,26 @@ The data is split into train_df and test_df for model training and evaluation.
 
 
 
-Data Cleaning and Preparation
+# Data Cleaning and Preparation
 
-Handling Missing Values:
+## Handling Missing Values:
 
 Imputed missing Age values with the median age.
 Filled missing Embarked values with the most common embarkation point.
 Excluded or simplified the Cabin feature due to a high proportion of missing values.
 
 
-Correcting Data Types:
+## Correcting Data Types:
 
 Converted Pclass and Survived to categorical types to optimize memory and improve analysis efficiency.
 
 
-Outlier Treatment:
+## Outlier Treatment:
 
 Capped outliers in Age and Fare using the IQR method to reduce their influence on model training.
 
 
-Feature Engineering
+## Feature Engineering
 
 Family Size: Created a new feature, FamilySize, by combining SibSp and Parch, plus 1 to account for the individual passenger.
 
@@ -94,26 +94,26 @@ test_df['IsAlone'] = (test_df['FamilySize'] == 1).astype(int)
 
 
 
-Exploratory Data Analysis (EDA)
+# Exploratory Data Analysis (EDA)
 
 
-Univariate Analysis:
+## Univariate Analysis:
 
 Examined distributions of continuous variables (Age, Fare) and visualized categorical variables (Pclass, Sex, Embarked) to understand the makeup of the dataset.
 
 
-Bivariate Analysis:
+## Bivariate Analysis:
 
 Analyzed survival rates by Pclass, Sex, and FamilySize to identify which factors might be associated with higher chances of survival.
 
 
-Multivariate Analysis:
+## Multivariate Analysis:
 
 Generated a correlation heatmap to assess relationships between numerical features, especially checking if Fare and Pclass were highly correlated, indicating redundancy.
 
 
 
-Results
+# Results
 The EDA provided the following insights:
 
 Class and Gender: First-class passengers and females had significantly higher survival rates.
@@ -123,7 +123,7 @@ These findings guided feature selection and the choice of algorithms for predict
 
 
 
-Technologies Used
+# Technologies Used
 Python: For data analysis and modeling
 Pandas: Data manipulation and analysis
 Matplotlib & Seaborn: Data visualization
@@ -131,7 +131,7 @@ Scikit-Learn: Model building and evaluation
 
 
 
-Getting Started
+# Getting Started
 Clone the repository and navigate to the project directory.
 
 bash
@@ -141,20 +141,20 @@ cd Titanic-Survival-Analysis
 
 
 
-Install required packages:
+# Install required packages:
 
 bash
 Copy code
 pip install -r requirements.txt
 
 
-Run the analysis:
+# Run the analysis:
 
 Open the Jupyter Notebook (Titanic_EDA_Modeling.ipynb) to follow along with the data cleaning, feature engineering, and EDA steps.
 
 
 
-Acknowledgements
+# Acknowledgements
 Kaggle for the Titanic dataset: Titanic: Machine Learning from Disaster
 Scikit-Learn documentation for machine learning tools and resources
 
