@@ -131,24 +131,24 @@ Scikit-Learn: Model building and evaluation
 
 
 
-# Getting Started
+## Getting Started
 Clone the repository and navigate to the project directory.
 
 bash
 Copy code
-git clone https://github.com/username/Titanic-Survival-Analysis.git
+git clone https://github.com/Gladwellchebelyon/FUTURE_DS_01.git
 cd Titanic-Survival-Analysis
 
 
 
-# Install required packages:
+## Install required packages:
 
 bash
 Copy code
 pip install -r requirements.txt
 
 
-# Run the analysis:
+## Run the analysis:
 
 Open the Jupyter Notebook (Titanic_EDA_Modeling.ipynb) to follow along with the data cleaning, feature engineering, and EDA steps.
 
